@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<base href="/">
+
+	<title>SAE KIET</title>
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="libs/bootstrap/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css"> <!-- custom styles -->
+	<link rel='shortcut icon' href='img/favicon.ico'>
+	<link rel="stylesheet" href="assets/font-awesome-4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/slick/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="assets/slick/slick-theme.css"/>
+
+	<!-- JS -->
+	<script src="libs/angular/angular.min.js"></script>
+	<script src="libs/angular-route/angular-route.min.js"></script>
+
+	<!-- ANGULAR CUSTOM -->
+	<script src="js/controllers/MainCtrl.js"></script>
+	<script src="js/controllers/ClubCtrl.js"></script>
+	<script src="js/services/ClubService.js"></script>
+	<script src="js/controllers/SponsorCtrl.js"></script>
+	<script src="js/services/SponsorService.js"></script>
+	<script src="js/appRoutes.js"></script>
+	<script src="js/app.js"></script>
+</head>
+<body ng-app="sampleApp" ng-controller="MainController">
+
+	<nav class="navbar navbar-inverse mynav">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="/"><img src = "assets/images/saekiet.png" height = "40px" width = "175"></a>
+			</div>
+			<div class="collapse navbar-collapse pull-right" id="myNavbar">
+				<ul class="nav navbar-nav pad">
+					<li><a href="/club"><span class="myfont" >CLUB ACTIVITIES</span></a></li>
+					<li><a href="/sponsor"><span class="myfont" >SPONSOR</span></a></li>
+					<li><a href="#about"><span class="myfont" >ABOUT</span></a></li>
+					<li><a href="#teams"><span class="myfont" >TEAMS</span></a></li>
+					<li><a href="#notice"><span class="myfont" >NOTICE</span></a></li>
+					<li><a href="#contact"><span class="myfont" >CONTACT US</span></a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<div ng-view></div>
+
+	<div id = "contact" class="row gutter-0 contactPage">
+        <div class="col-sm-6 col-md-4">
+                <p class="myfont" style="font-size: 16px; padding-left: 10px; padding-top:20px">
+                    In-charge's Name Here<br>
+                    Designation<br>
+                    Krishna Institute of Engineering & Technology<br>
+                    <i class = "fa customFontSize">&#xf095;</i>+91 XXXXXXXXXX &nbsp
+                    <a href = "mailto:mynameshubham@gmail.com">
+                        <i class="fa customFontSize">&#xf0e0;</i>
+                        <span style = "color: lightgray">whatever@gmail.com</span>
+                    </a>
+                </p>
+        </div>
+        <div class="col-sm-6 col-md-4">
+            <center style="padding-top: 40px">
+                <a href = "http://facebook.com/sae.kiet">
+                    <i class="fa fb">&#xf09a;</i>
+                </a>
+                <a href = "mailto:mynameshubham@gmail.com">
+                    <i class="fa mail">&#xf0e0;</i>
+                </a>
+                <a href = "http://linkedin.com/sae.kiet">
+                    <i class="fa linkedin">&#xf0e1;</i>
+                </a>
+                <a href = "http://youtube.com/sae.kiet">
+                    <i class="fa youtube">&#xf16a;</i>
+                </a>
+                <a href = "http://instagram.com/sae.kiet">
+                    <i class="fa insta">&#xf16d;</i>
+                </a>
+            </center>
+        </div>
+        <div class="col-sm-12 col-md-4">
+            <p class="myfont" style="font-size: 16px; text-align: right; padding-right: 10px; padding-top: 20px">
+                Ghaziabad - Meerut Highway<br>NH-58, Ghaziabad, Uttar Pradesh (201206)<br>
+                Krishna Institute of Engineering & Technology<br>
+            <i class = "fa customFontSize">&#xf095;</i>1800 313 0056
+            </p>
+        </div>
+    </div>
+
+	<div class = "footer row gutter-0">
+		<center>
+			<p style="padding-top:10px;">Copyright &copy 2017. All Rights Reserved</p>
+			<p>developed and designed by
+				<a href = "http://shubhamsingh.info" target="_blank">
+					<span style = "color: #007bc3">Shubham Singh</span>
+				</a>
+				&
+				<a href = "http://iamsandeep.info" target="_blank">
+					<span style = "color: #007bc3">Sandeep Kumar</span>
+				</a>
+			</p>
+		</center>
+	</div>
+
+	<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<script type="text/javascript" src="assets/slick/slick.min.js"></script>
+</body>
+</html>
