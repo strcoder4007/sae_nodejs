@@ -172,9 +172,7 @@ body {
     height: 100%;
 }
 
-.carousel,
-.item,
-.active {
+.item{
     height: calc(100vh - 70px);
 }
 
