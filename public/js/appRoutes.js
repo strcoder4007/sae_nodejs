@@ -51,6 +51,10 @@ angular.module('appRoutes', []).config(['$routeProvider', '$locationProvider', f
 			templateUrl: 'views/incredibles2016.html',
 			controller: 'TeamController'
 		})
+		.when('/IncrediblesSponsors', {
+			templateUrl: 'views/incrediblesSponsors.html',
+			controller: 'SponsorController'
+		})
 
 
 		.when('/immortals', {
@@ -65,6 +69,10 @@ angular.module('appRoutes', []).config(['$routeProvider', '$locationProvider', f
 			templateUrl: 'views/immortals2016.html',
 			controller: 'TeamController'
 		})
+		.when('/ImmortalsSponsors', {
+			templateUrl: 'views/immortalsSponsors.html',
+			controller: 'SponsorController'
+		})
 
 
 		.when('/invincibles', {
@@ -78,6 +86,10 @@ angular.module('appRoutes', []).config(['$routeProvider', '$locationProvider', f
 		.when('/invincibles2016', {
 			templateUrl: 'views/invincibles2016.html',
 			controller: 'TeamController'
+		})
+		.when('/InvinciblesSponsors', {
+			templateUrl: 'views/invinciblesSponsors.html',
+			controller: 'SponsorController'
 		});
 
 	$locationProvider.html5Mode(true);
