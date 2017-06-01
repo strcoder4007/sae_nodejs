@@ -38,18 +38,45 @@ angular.module('appRoutes', []).config(['$routeProvider', '$locationProvider', f
 			controller: 'MainController'
 		})
 
+
 		.when('/incredibles', {
 			templateUrl: 'views/teams.html',
 			controller: 'TeamController'
 		})
+		.when('/incredibles2017', {
+			templateUrl: 'views/incredibles2017.html',
+			controller: 'TeamController'
+		})
+		.when('/incredibles2016', {
+			templateUrl: 'views/incredibles2016.html',
+			controller: 'TeamController'
+		})
+
 
 		.when('/immortals', {
 			templateUrl: 'views/teams.html',
 			controller: 'TeamController'
 		})
+		.when('/immortals2017', {
+			templateUrl: 'views/immortals2017.html',
+			controller: 'TeamController'
+		})
+		.when('/immortals2016', {
+			templateUrl: 'views/immortals2016.html',
+			controller: 'TeamController'
+		})
+
 
 		.when('/invincibles', {
 			templateUrl: 'views/teams.html',
+			controller: 'TeamController'
+		})
+		.when('/invincibles2017', {
+			templateUrl: 'views/invincibles2017.html',
+			controller: 'TeamController'
+		})
+		.when('/invincibles2016', {
+			templateUrl: 'views/invincibles2016.html',
 			controller: 'TeamController'
 		});
 
