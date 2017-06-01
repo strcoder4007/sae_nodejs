@@ -24,18 +24,33 @@ angular.module('appRoutes', []).config(['$routeProvider', '$locationProvider', f
 		})
 
 		.when('/teams', {
-			templateUrl: 'views/home.html/#teams',
+			templateUrl: 'views/home.html',
 			controller: 'MainController'
 		})
 
 		.when('/notice', {
-			templateUrl: 'views/home.html/#notice',
+			templateUrl: 'views/home.html',
 			controller: 'MainController'
 		})
 
 		.when('/contact', {
-			templateUrl: 'views/home.html/#contact',
+			templateUrl: 'views/home.html',
 			controller: 'MainController'
+		})
+
+		.when('/incredibles', {
+			templateUrl: 'views/teams.html',
+			controller: 'TeamController'
+		})
+
+		.when('/immortals', {
+			templateUrl: 'views/teams.html',
+			controller: 'TeamController'
+		})
+
+		.when('/invincibles', {
+			templateUrl: 'views/teams.html',
+			controller: 'TeamController'
 		});
 
 	$locationProvider.html5Mode(true);

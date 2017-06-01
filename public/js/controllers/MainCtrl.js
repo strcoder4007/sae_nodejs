@@ -7,6 +7,7 @@ angular.module('MainCtrl', []).controller('MainController', function($scope) {
 		  slidesToShow: 1,
 		  adaptiveHeight: true,
 		  mobileFirst: true,
+		  pauseOnHover: false,
 		  prevArrow: '<button type="button" class="slick-prev" style = "margin-left: 30px; z-index: 10;">Previous</button>',
 		  nextArrow: '<button type="button" class="slick-next" style = "margin-right: 30px;">Next</button>',
 		});
